@@ -1,0 +1,15 @@
+name: CoinSystem
+version: '1.0'
+main: de.zillolp.coinsystem.CoinSystem
+api-version: 1.18
+author: ZilloLP
+
+commands:
+  coins:
+    description: Zeigt deine Coins an.
+  setcoins:
+    description: Setzt die Coins eines Spielers.
+  addcoins:
+    description: Schreibt einem Spieler Coins zu.
+  removecoins:
+    description: Zieht einem Spieler Coins ab.

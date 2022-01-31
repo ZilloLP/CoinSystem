@@ -1,0 +1,15 @@
+de\zillolp\coinsystem\commands\RemoveCoinsCommand.class
+de\zillolp\coinsystem\profiles\PlayerProfil.class
+de\zillolp\coinsystem\commands\CoinsCommand.class
+de\zillolp\coinsystem\utils\StringUtil.class
+de\zillolp\coinsystem\config\tools\PermissionTools.class
+de\zillolp\coinsystem\utils\ConfigManager.class
+de\zillolp\coinsystem\commands\SetCoinsCommand.class
+de\zillolp\coinsystem\listeners\PlayerConnectionListener.class
+de\zillolp\coinsystem\events\PlayerRemoveCoins.class
+de\zillolp\coinsystem\CoinSystem.class
+de\zillolp\coinsystem\commands\AddCoinsCommand.class
+de\zillolp\coinsystem\utils\ConfigUtil.class
+de\zillolp\coinsystem\config\ConfigCreation.class
+de\zillolp\coinsystem\events\PlayerAddCoinsEvent.class
+de\zillolp\coinsystem\config\tools\LanguageTools.class
