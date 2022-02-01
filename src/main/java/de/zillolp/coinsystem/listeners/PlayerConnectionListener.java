@@ -17,9 +17,7 @@ public class PlayerConnectionListener implements Listener {
     @EventHandler
     public void onPlayerJoinEvent(PlayerJoinEvent event) {
         Player player = event.getPlayer();
-        if (playerProfiles.containsKey(player.getUniqueId())) {
-            playerProfiles.replace(player.getUniqueId(), new PlayerProfil(player));
-        } else {
+        if (playerProfiles.replace(player.getUniqueId(), new PlayerProfil(player)) == null) {
             playerProfiles.put(player.getUniqueId(), new PlayerProfil(player));
         }
     }
@@ -27,8 +25,6 @@ public class PlayerConnectionListener implements Listener {
     @EventHandler
     public void onPlayerQuitEvent(PlayerQuitEvent event) {
         Player player = event.getPlayer();
-        if (playerProfiles.containsKey(player.getUniqueId())) {
-            playerProfiles.remove(player.getUniqueId());
-        }
+        playerProfiles.get(player.getUniqueId()).saveProfil();
     }
 }

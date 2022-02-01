@@ -1,14 +1,12 @@
 D:\Development\IntelliJ\workspace\CoinSystem\src\main\java\de\zillolp\coinsystem\commands\RemoveCoinsCommand.java
+D:\Development\IntelliJ\workspace\CoinSystem\src\main\java\de\zillolp\coinsystem\config\LanguageTools.java
 D:\Development\IntelliJ\workspace\CoinSystem\src\main\java\de\zillolp\coinsystem\CoinSystem.java
 D:\Development\IntelliJ\workspace\CoinSystem\src\main\java\de\zillolp\coinsystem\commands\AddCoinsCommand.java
-D:\Development\IntelliJ\workspace\CoinSystem\src\main\java\de\zillolp\coinsystem\config\ConfigCreation.java
+D:\Development\IntelliJ\workspace\CoinSystem\src\main\java\de\zillolp\coinsystem\config\PermissionTools.java
 D:\Development\IntelliJ\workspace\CoinSystem\src\main\java\de\zillolp\coinsystem\commands\CoinsCommand.java
 D:\Development\IntelliJ\workspace\CoinSystem\src\main\java\de\zillolp\coinsystem\listeners\PlayerConnectionListener.java
-D:\Development\IntelliJ\workspace\CoinSystem\src\main\java\de\zillolp\coinsystem\utils\ConfigManager.java
-D:\Development\IntelliJ\workspace\CoinSystem\src\main\java\de\zillolp\coinsystem\config\tools\PermissionTools.java
 D:\Development\IntelliJ\workspace\CoinSystem\src\main\java\de\zillolp\coinsystem\events\PlayerRemoveCoins.java
 D:\Development\IntelliJ\workspace\CoinSystem\src\main\java\de\zillolp\coinsystem\utils\StringUtil.java
-D:\Development\IntelliJ\workspace\CoinSystem\src\main\java\de\zillolp\coinsystem\config\tools\LanguageTools.java
 D:\Development\IntelliJ\workspace\CoinSystem\src\main\java\de\zillolp\coinsystem\events\PlayerAddCoinsEvent.java
 D:\Development\IntelliJ\workspace\CoinSystem\src\main\java\de\zillolp\coinsystem\commands\SetCoinsCommand.java
 D:\Development\IntelliJ\workspace\CoinSystem\src\main\java\de\zillolp\coinsystem\profiles\PlayerProfil.java

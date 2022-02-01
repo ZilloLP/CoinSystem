@@ -1,44 +1,47 @@
 package de.zillolp.coinsystem.profiles;
 
-import de.zillolp.coinsystem.config.ConfigCreation;
+import de.zillolp.coinsystem.CoinSystem;
 import de.zillolp.coinsystem.utils.ConfigUtil;
 import org.bukkit.entity.Player;
 
 public class PlayerProfil {
-    private ConfigUtil configUtil = ConfigCreation.configManager.getNewConfig("coins.yml");
     private Player player;
-    private String uuid;
-    private String name;
-    private String section;
+    private int coins;
 
     public PlayerProfil(Player player) {
+        ConfigUtil configUtil = new ConfigUtil("coins.yml");
         this.player = player;
-        this.uuid = player.getUniqueId().toString();
-        this.name = player.getName();
-        this.section = "Players." + uuid;
+        this.coins = configUtil.getInt("Players." + player.getUniqueId() + ".Coins");
         createProfile();
     }
 
     private void createProfile() {
-        configUtil.set(section + ".Name", name);
-        if (!(configUtil.contains(section + ".Coins"))) {
-            configUtil.set(section + ".Coins", 0);
+        ConfigUtil configUtil = new ConfigUtil("coins.yml");
+        configUtil.set("Players." + player.getUniqueId() + ".Name", player.getName());
+        if (!(configUtil.contains("Players." + player.getUniqueId() + ".Coins"))) {
+            configUtil.set("Players." + player.getUniqueId() + ".Coins", 0);
         }
     }
 
-    public Integer getCoins() {
-        return configUtil.getInteger(section + ".Coins");
+    public int getCoins() {
+        return coins;
     }
 
     public void setCoins(int coins) {
-        configUtil.set(section + ".Coins", coins);
+        this.coins = coins;
     }
 
     public void addCoins(int coins) {
-        setCoins(getCoins() + coins);
+        setCoins(this.coins + coins);
     }
 
     public void removeCoins(int coins) {
-        setCoins(getCoins() - coins);
+        setCoins(this.coins - coins);
+    }
+
+    public void saveProfil() {
+        ConfigUtil configUtil = new ConfigUtil("coins.yml");
+        configUtil.set("Players." + player.getUniqueId() + ".Coins", coins);
+        CoinSystem.playerProfiles.remove(player.getUniqueId());
     }
 }

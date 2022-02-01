@@ -1,0 +1,22 @@
+# +----------------------------------------------------+
+# <                     CoinSystem                     >
+# +----------------------------------------------------+
+
+# Basic messages
+PREFIX: '&7[&aCoinSystem&7] '
+NO_PERMISSION: '&cDazu hast du keine Rechte!'
+ONLY_PLAYER: '&cDu musst ein Spieler sein!'
+
+# Command messages
+OWN_COINS: '&7Du besitzt aktuell &a%coins% Coins&7.'
+UNKNOWN_PLAYER: '&cDieser Spieler konnte nicht gefunden werden.'
+NO_NUMBER: '&cBitte gebe eine richtige Zahl an.'
+SET_COINS_PLAYER: '&7Du hast die Coins von &2%target% &7auf &a%coins% Coins &7gesetzt.'
+SET_COINS_TARGET: '&7Deine Coins wurden von &2%player% &7auf &a%coins% Coins &7gesetzt.'
+SET_COINS_OWN: '&7Du hast deine Coins auf &a%coins% Coins &7gesetzt.'
+ADD_COINS_PLAYER: '&7Du hast &2%target% &a%coins% Coins &7gutgeschrieben.'
+ADD_COINS_TARGET: '&7Du hast von &2%player% &a%coins% Coins &7gutgeschrieben bekommen.'
+ADD_COINS_OWN: '&7Du hast dir &a%coins% Coins &7gutgeschrieben.'
+REMOVE_COINS_PLAYER: '&7Du hast &2%target% &a%coins% Coins &7abgezogen.'
+REMOVE_COINS_TARGET: '&7Du hast von &2%player% &a%coins% Coins &7abgezogen bekommen.'
+REMOVE_COINS_OWN: '&7Du hast dir &a%coins% Coins &7abgezogen.'
