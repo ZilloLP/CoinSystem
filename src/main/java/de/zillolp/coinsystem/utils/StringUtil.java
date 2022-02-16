@@ -5,12 +5,11 @@ import org.bukkit.entity.Player;
 public class StringUtil {
 
     public static boolean isNumber(String value) {
-        try {
-            Integer.parseInt(value);
-            return true;
-        } catch (NumberFormatException e) {
-            return false;
+        boolean ret = false;
+        if(value.matches("[0-9]+")){
+            ret = true;
         }
+        return ret;
     }
 
     public static String replaceDefaults(String message) {
